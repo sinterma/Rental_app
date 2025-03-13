@@ -2,7 +2,7 @@ import listAppartmentData from "../data/listings.json";
 import React, { useState } from 'react';
 import ItemCard from "./ItemCard";
 
-export const ListAppartments = () => {
+const ListAppartments = () => {
 
 
 const [appartmentList, setAppartmentList] = useState(listAppartmentData.results);
@@ -26,5 +26,5 @@ return (
     </div>
 );
 };
-        
+export default ListAppartments;
   
