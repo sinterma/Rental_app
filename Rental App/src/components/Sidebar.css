@@ -21,7 +21,7 @@
   transition: all 0.3s ease;
 }
 
-.sidebar ul li a {
+.nav-link {
   color:  #978341; 
   text-decoration: none;
   display: block;
@@ -36,6 +36,12 @@
   border-radius: 8px;
 }
 
-.sidebar ul li a:hover {
-  color: #2c2c2c; 
+.nav-link:hover {
+  color: #2c2c2c;
+}
+
+.active-link {
+  background: #d4af37;
+  color: #2c2c2c !important;
+  border-radius: 8px;
 }

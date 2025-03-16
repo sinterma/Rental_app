@@ -11,7 +11,7 @@
 .apartmentList-button {
     position: absolute;
     transform: translate(-50%, -50%); /* Центрирование */
-    padding: 5px 10px;
+    padding: 10px 15px;
     display: inline-block;
     background: linear-gradient(45deg, #b8860b, #ffd700); 
     color: #2c2c2c; 
