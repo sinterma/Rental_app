@@ -7,7 +7,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import { Routes, Route } from "react-router-dom";
 import { NotFound } from "./pages/NotFound";
-import ItemDetails from "./pages/ItemDetails";
+import AvailableList from "./pages/AvailableList";
 import { useState } from "react";
 
 function App() {
@@ -28,7 +28,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/detail/:id" element={<ItemDetails />} />
+        <Route path="/list/:id" element={<AvailableList/>} />
         <Route path="*" element={<NotFound />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
