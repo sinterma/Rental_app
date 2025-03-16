@@ -9,7 +9,7 @@ function About() {
       <p className="about-subtitle">Smart Rental helps you find the perfect apartment.</p>
       <div className="about-content">
         <p>
-        At RENTAL SMART, we are dedicated to providing exceptional short-term
+        At SMART RENTAL, we are dedicated to providing exceptional short-term
         rental experiences that make every guest feel at home, no matter where
         they are. </p>
         <p> With a commitment to quality, comfort, and customer service,

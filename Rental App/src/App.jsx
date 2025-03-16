@@ -16,12 +16,12 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <button
+      <button className ="show-button"
         onClick={() => {
           setShowSidebar(!showSidebar);
         }}
       >
-        Show
+        Show Sidebar
       </button>
       {showSidebar ? <Sidebar /> : null}
 
