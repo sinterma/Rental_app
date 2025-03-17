@@ -1,0 +1,63 @@
+.add-apartment-form {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    background: rgba(255, 215, 0, 0.15); 
+    box-shadow: 0px 6px 12px rgba(109, 98, 34, 0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.add-apartment-form h3 {
+    color: #978341;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.add-apartment-form input {
+    width: 100%;
+    padding: 12px;
+    margin: 5px 0;
+    border: 2px solid #b8860b;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #2c2c2c;
+    background: #fff;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.add-apartment-form input:focus {
+    border-color: #ffd700;
+    box-shadow: 0px 3px 8px rgba(184, 134, 11, 0.4);
+}
+
+/* Кнопка "Add Apartment" */
+.submit-button {
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 30px;
+    background: linear-gradient(45deg, #b8860b, #ffd700); 
+    color: #2c2c2c; 
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(109, 98, 34, 0.4);
+    border: none;
+    cursor: pointer;
+    margin-top: 10px; /* Отступ сверху */
+}
+
+.submit-button:hover {
+    background: linear-gradient(45deg, #d4af37, #ffdf00);
+    transform: scale(1.05);
+}
+
+.submit-button:focus {
+    outline: none; 
+    box-shadow: none; 
+}

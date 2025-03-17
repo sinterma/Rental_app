@@ -1,11 +1,12 @@
 import React from 'react'
 import { Link } from "react-router-dom";
+import "./NotFound.css"; 
 
 export const NotFound = () => {
   return (
     <div>
-      <div> 404 NotFound...OOOPS</div>
-      <Link to ="/"> Go to Home Page</Link>
+      <p className='Er404'> 404 NotFound...OOOPS</p>
+      <Link to="/" className="home-button"> Go to Home Page</Link>
     </div>
   )
 }
