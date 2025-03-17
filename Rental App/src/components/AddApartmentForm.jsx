@@ -34,7 +34,7 @@ const AddApartmentForm = ({ onAdd }) => {
         required
       />
       <input
-        type="text"
+        type="number"
         placeholder="Price (€)"
         value={price}
         onChange={(e) => setPrice(e.target.value)}
