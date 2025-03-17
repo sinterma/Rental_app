@@ -1,22 +1,22 @@
 import React, {useState}  from "react";
 import { Link } from "react-router-dom";
 import "./AvailableList.css";
-import ListAppartments from "../components/ListAppartments";
+import ListApartments from "../components/ListApartments";
 import AddApartmentForm from "../components/AddApartmentForm"
-import listAppartmentData from "../data/listings.json";
+import listApartmentData from "../data/listings.json";
 
 export const AvailableList = () => {
-  const [appartmentList, setAppartmentList] = useState(listAppartmentData.results);
+  const [apartmentList, setApartmentList] = useState(listApartmentData.results);
 
   const handleAddApartment = (newApartment) => {
-    setAppartmentList([newApartment, ...appartmentList]); 
+    setApartmentList([newApartment, ...apartmentList]); 
   };
 
   return (
     <div className="available-list">
       <AddApartmentForm onAdd={handleAddApartment} />
       <h2>Available Apartments</h2>
-      <ListAppartments appartmentList={appartmentList} setAppartmentList={setAppartmentList} />
+      <ListApartments apartmentList={apartmentList} setApartmentList={setApartmentList} />
       <Link to="/" className="home-button">Go to Home Page</Link>
     </div>
   );

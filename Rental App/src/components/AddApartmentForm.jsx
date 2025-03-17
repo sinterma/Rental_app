@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./AddApartmentForm.css"; // Подключаем стили
+import "./AddApartmentForm.css"; 
 
 const AddApartmentForm = ({ onAdd }) => {
   const [name, setName] = useState("");
@@ -11,13 +11,13 @@ const AddApartmentForm = ({ onAdd }) => {
     if (!name || !price || !pictureUrl) return;
 
     const newApartment = {
-      id: Date.now(), // Генерируем уникальный ID
+      id: Date.now(), 
       name,
       price: `${price}`,
       picture_url: pictureUrl,
     };
 
-    onAdd(newApartment); // Передаём данные в родительский компонент
+    onAdd(newApartment);
     setName("");
     setPrice("");
     setPictureUrl("");
