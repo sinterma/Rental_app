@@ -1,5 +1,6 @@
 .sidebar {
   width: 250px;
+
   height: 100vh;
   background: linear-gradient(45deg, #2c2c2c, #4b4b4b); 
   color: #ffd700; 
@@ -36,12 +37,23 @@
   border-radius: 8px;
 }
 
+.active-link {
+  background: linear-gradient(45deg, #b8860b, #ffd700); 
+  color: #2c2c2c !important;
+  border-radius: 8px;
+}
+
+.sidebar ul li:hover .active-link {
+  background: transparent;
+
+}
+
 .nav-link:hover {
   color: #2c2c2c;
 }
 
-.active-link {
-  background: #d4af37;
-  color: #2c2c2c !important;
-  border-radius: 8px;
-}
+
+
+
+
+
