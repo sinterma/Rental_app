@@ -37,13 +37,23 @@
     
 }
 
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+
 .delete-button {
-    padding: 8px 16px;
+    padding: 2px 6px;
     background: linear-gradient(45deg, #b8860b, #ffd700);
     color: #2c2c2c;
     border: none;
     border-radius: 20px;
-    font-size: 16px;
+    font-size: 13px;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -55,4 +65,82 @@
 .delete-button:hover {
     background: linear-gradient(45deg, #d4af37, #ffdf00);
     transform: scale(1.05);
+}
+
+.edit-button {
+    padding: 2px 6px;
+    background: linear-gradient(45deg, #b8860b, #ffd700);
+    color:  #2c2c2c;
+    border: none;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 10px auto;
+    display: block;
+}
+
+.edit-button:hover {
+    background: linear-gradient(45deg, #d4af37, #ffdf00);
+    transform: scale(1.05);
+}
+
+.edit-apartment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    background: #2c2c2c;
+    box-shadow: 0px 4px 15px rgba(163, 144, 75, 0.2);
+    border-radius: 12px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    color: #978341;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.edit-apartment-form h3 {
+    color: #ffd700;
+    margin-bottom: 10px;
+}
+
+.edit-apartment-form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #b8860b;
+    border-radius: 8px;
+    background: #3c3c3c;
+    color: #ffd700;
+    font-size: 16px;
+}
+
+.edit-apartment-form input::placeholder {
+    color: #d4af37;
+}
+
+.submit-button, 
+.cancel-button {
+   
+    background: linear-gradient(45deg, #b8860b, #ffd700);
+    color: #2c2c2c;
+    border: none;
+    border-radius: 20px;
+    font-size: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.submit-button:hover, 
+.cancel-button:hover {
+    background: linear-gradient(45deg, #d4af37, #ffdf00);
+    transform: scale(1.05);
+}
+
+.bigger {
+    padding: 10px;
+    font-size: 15px;
 }
