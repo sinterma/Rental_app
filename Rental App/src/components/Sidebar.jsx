@@ -25,7 +25,7 @@ const Sidebar = () => {
         </li>
         <li>
           <NavLink 
-            to="/list/:id" 
+            to="/list" 
             className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"}
           >
             Available Apartments
