@@ -10,9 +10,13 @@ import { NotFound } from "./pages/NotFound";
 import AvailableList from "./pages/AvailableList";
 import { useState } from "react";
 import ItemDetails from "./pages/ItemDetails"; 
+import apartmentList from "../src/data/listings.json"
 
 function App() {
   const [showSidebar, setShowSidebar] = useState(true);
+  const [apartments, setApartments] = useState(apartmentList.results || [])
+
+console.log("apartments from center data:",apartments)
 
   return (
     <div className="App">
@@ -29,8 +33,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/list" element={<AvailableList/>} />
-        <Route path="/apartment/:id" element={<ItemDetails />} />
+        <Route path="/list" element={<AvailableList apartments={apartments} setApartments={setApartments}/>} />
+        <Route path="/apartment/:id" element={<ItemDetails apartments={apartments} />} />
         <Route path="*" element={<NotFound />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
