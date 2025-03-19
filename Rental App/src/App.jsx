@@ -9,6 +9,7 @@ import { Routes, Route } from "react-router-dom";
 import { NotFound } from "./pages/NotFound";
 import AvailableList from "./pages/AvailableList";
 import { useState } from "react";
+import ItemDetails from "./pages/ItemDetails"; 
 
 function App() {
   const [showSidebar, setShowSidebar] = useState(true);
@@ -29,6 +30,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/list" element={<AvailableList/>} />
+        <Route path="/apartment/:id" element={<ItemDetails />} />
         <Route path="*" element={<NotFound />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
