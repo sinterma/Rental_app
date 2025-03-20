@@ -51,15 +51,14 @@
   margin-bottom: 120px;
 }
 
-
 .show-button {
-  position: absolute; 
+  position: absolute;
   top: 10px;
   left: 10px;
   padding: 5px 10px;
   display: inline-block;
-  background: linear-gradient(45deg, #b8860b, #ffd700); 
-  color: #2c2c2c; 
+  background: linear-gradient(45deg, #b8860b, #ffd700);
+  color: #2c2c2c;
   text-decoration: none;
   font-size: 13px;
   font-weight: bold;
@@ -76,9 +75,9 @@
   color: #2c2c2c;
   outline: none;
 }
- 
+
 .show-button:focus,
 .show-button:focus-visible {
-  outline: none; 
-  box-shadow: none; 
+  outline: none;
+  box-shadow: none;
 }

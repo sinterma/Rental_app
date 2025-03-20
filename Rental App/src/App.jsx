@@ -9,19 +9,20 @@ import { Routes, Route } from "react-router-dom";
 import { NotFound } from "./pages/NotFound";
 import AvailableList from "./pages/AvailableList";
 import { useState } from "react";
-import ItemDetails from "./pages/ItemDetails"; 
-import apartmentList from "../src/data/listings.json"
+import ItemDetails from "./pages/ItemDetails";
+import apartmentList from "../src/data/listings.json";
 
 function App() {
   const [showSidebar, setShowSidebar] = useState(true);
-  const [apartments, setApartments] = useState(apartmentList.results || [])
+  const [apartments, setApartments] = useState(apartmentList.results || []);
 
-console.log("apartments from center data:",apartments)
+  console.log("apartments from center data:", apartments);
 
   return (
     <div className="App">
       <Navbar />
-      <button className ="show-button"
+      <button
+        className="show-button"
         onClick={() => {
           setShowSidebar(!showSidebar);
         }}
@@ -33,8 +34,19 @@ console.log("apartments from center data:",apartments)
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/list" element={<AvailableList apartments={apartments} setApartments={setApartments}/>} />
-        <Route path="/apartment/:id" element={<ItemDetails apartments={apartments} />} />
+        <Route
+          path="/list"
+          element={
+            <AvailableList
+              apartments={apartments}
+              setApartments={setApartments}
+            />
+          }
+        />
+        <Route
+          path="/apartment/:id"
+          element={<ItemDetails apartments={apartments} />}
+        />
         <Route path="*" element={<NotFound />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>

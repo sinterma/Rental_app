@@ -2,8 +2,8 @@
   width: 250px;
 
   height: 100vh;
-  background: linear-gradient(45deg, #2c2c2c, #4b4b4b); 
-  color: #ffd700; 
+  background: linear-gradient(45deg, #2c2c2c, #4b4b4b);
+  color: #ffd700;
   position: fixed;
   top: 0;
   right: 0;
@@ -23,7 +23,7 @@
 }
 
 .nav-link {
-  color:  #978341; 
+  color: #978341;
   text-decoration: none;
   display: block;
   font-size: 18px;
@@ -32,28 +32,21 @@
 }
 
 .sidebar ul li:hover {
-  background: linear-gradient(45deg, #b8860b, #ffd700); 
+  background: linear-gradient(45deg, #b8860b, #ffd700);
   transform: scale(1.05);
   border-radius: 8px;
 }
 
 .active-link {
-  background: linear-gradient(45deg, #b8860b, #ffd700); 
+  background: linear-gradient(45deg, #b8860b, #ffd700);
   color: #2c2c2c !important;
   border-radius: 8px;
 }
 
 .sidebar ul li:hover .active-link {
   background: transparent;
-
 }
 
 .nav-link:hover {
   color: #2c2c2c;
 }
-
-
-
-
-
-
