@@ -10,7 +10,7 @@
 }
 .apartmentList-button {
     position: absolute;
-    transform: translate(-50%, -50%); /* Центрирование */
+    transform: translate(-50%, -50%); 
     padding: 10px 15px;
     display: inline-block;
     background: linear-gradient(45deg, #b8860b, #ffd700); 
@@ -27,7 +27,7 @@
   
   .apartmentList-button:hover {
     background: linear-gradient(45deg, #d4af37, #ffdf00);
-    transform: translate(-50%, -50%) scale(1.05); /* Центрирование сохраняется */
+    transform: translate(-50%, -50%) scale(1.05); 
     color: #2c2c2c;
     outline: none;
   }
