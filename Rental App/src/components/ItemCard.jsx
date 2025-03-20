@@ -28,7 +28,10 @@ const ItemCard = ({ list, onDelete,onEdit  }) => {
       <div className="item-content">
         <h3 className="item-title">{list.name}</h3>
         <p className="item-price">
-              <span>Price:</span> {list.price} {priceBadge}
+        <p className="item-price">
+  <span>Price:</span> {list.price && typeof list.price === "string" && list.price.includes("$") ? list.price : `$${list.price || 0}`} {priceBadge}
+</p>
+
             </p>
             <div className="button-container">
               <button className="edit-button" onClick={() => setIsEditing(true)}>✏️ Edit</button>

@@ -21,7 +21,9 @@ const ItemDetails = ({apartments}) => {
       <h2 className="apartment-title">{foundApartment.name}</h2>
       <img className="apartment-image" src={foundApartment.picture_url} alt={foundApartment.name} width="300" />
       <p className="apartment-info">{foundApartment.description}</p>
-      <p className="apartment-price">Price: {foundApartment.price}</p>
+      <p className="apartment-price">
+  Price: {foundApartment.price.includes("$") ? foundApartment.price : `$${foundApartment.price}`}
+</p>
       <p className="apartment-info">Location: {foundApartment.neighbourhood}</p>
       <div className="button-container">
         <button className="action-button">
